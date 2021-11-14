@@ -310,6 +310,101 @@
         </v-col>
       </v-row>
     </div>
+
+    <!--sec 5 -->
+    <div id="section5">
+      <v-row justify="center" class="mt-4">
+        <h1 class="h1 font-weight-bold mb-4 font text-center text-capitalize">
+          My Experience at Chefs Academy
+        </h1>
+      </v-row>
+
+      <v-row>
+        <v-carousel
+          cycle
+          height="400"
+          hide-delimiter-background
+          show-arrows-on-hover
+        >
+          <v-carousel-item>
+            <v-row justify="center" class="mt-8">
+              <v-avatar color="primary" size="164">
+                <img src="/grad3.jpg" />
+              </v-avatar>
+            </v-row>
+            <v-row justify="center" class="mt-4">
+              <div class="text-center mx-auto font mt-4">
+                The professionalism at Chef's Academy is top notch and the
+                quality <br />
+                of services rendered are highly commendable. I'd recommend
+                Chef's Academy not just for the value one gets but also for the
+                amazing <br />
+                learning experience that stays with you long after the end of
+                the program
+              </div>
+            </v-row>
+            <v-row justify="center" class="mt-4">
+              <div class="text-center mx-auto font mt-4 overline">Amaka</div>
+            </v-row>
+
+            <v-row justify="center" class="mt-2">
+              <div class="text-center mx-auto font mt-4 h4">GRADUATE</div>
+            </v-row>
+          </v-carousel-item>
+
+          <v-carousel-item>
+            <v-row justify="center" class="mt-8">
+              <v-avatar color="primary" size="164">
+                <img src="/grd1.jpg" />
+              </v-avatar>
+            </v-row>
+            <v-row justify="center" class="mt-4">
+              <div class="text-center mx-auto font mt-4">
+                Training at Chef's Academy is the highlight of my professional
+                career so far.<br />
+                The wealth of knowledge taught and the practical application
+                will launch anyone<br />
+                who desires to go into the culinary world from a novice to a
+                professional per excellence.
+              </div>
+            </v-row>
+            <v-row justify="center" class="mt-4">
+              <div class="text-center mx-auto font mt-4 overline">
+                Anselm Ekere
+              </div>
+            </v-row>
+
+            <v-row justify="center" class="mt-2">
+              <div class="text-center mx-auto font mt-4 h4">GRADUATE</div>
+            </v-row>
+          </v-carousel-item>
+
+          <v-carousel-item>
+            <v-row justify="center" class="mt-8">
+              <v-avatar color="primary" size="164">
+                <img src="/grad2.jpg" />
+              </v-avatar>
+            </v-row>
+            <v-row justify="center" class="mt-4">
+              <div class="text-center mx-auto font mt-4">
+                The professionalism at Chef's Academy is top notch and the
+                quality of services rendered are highly commendable.<br />
+                I'd recommend Chef's Academy not just for the value one gets but
+                also for the amazing learning<br />
+                experience that stays with you long after the end of the program
+              </div>
+            </v-row>
+            <v-row justify="center" class="mt-4">
+              <div class="text-center mx-auto font mt-4 overline">Tokunbo</div>
+            </v-row>
+
+            <v-row justify="center" class="mt-2">
+              <div class="text-center mx-auto font mt-4 h4">GRADUATE</div>
+            </v-row>
+          </v-carousel-item>
+        </v-carousel>
+      </v-row>
+    </div>
   </div>
 </template>
 
@@ -367,6 +462,13 @@ export default {
 #section4 {
   width: 100vw;
   height: 110vh;
+  overflow: hidden;
+  background: ghostwhite;
+}
+
+#section5 {
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
   background: ghostwhite;
 }
