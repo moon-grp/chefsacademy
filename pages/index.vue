@@ -63,7 +63,7 @@
       </v-row>
       <v-row class="mt-2">
         <v-col cols="4">
-          <v-card class="mx-auto" max-width="300" height="450">
+          <v-card class="mx-auto" max-width="300" height="450"   elevation="10">
             <v-img height="200" src="/c1.jpg"></v-img>
 
             <v-card-title class="font">Diploma in Culinary Art</v-card-title>
@@ -89,7 +89,7 @@
         </v-col>
 
         <v-col cols="4">
-          <v-card class="mx-auto" max-width="300" height="450">
+          <v-card class="mx-auto" max-width="300" height="450" elevation="10">
             <v-img height="200" src="/c2.jpeg"></v-img>
 
             <v-card-title class="font">Desserts & Pastries</v-card-title>
@@ -114,7 +114,7 @@
         </v-col>
 
         <v-col cols="4">
-          <v-card class="mx-auto" max-width="300" height="450">
+          <v-card class="mx-auto" max-width="300" height="450" elevation="10">
             <v-img height="200" src="/c2.png"></v-img>
 
             <v-card-title class="font">Continental Culinary Art</v-card-title>
@@ -248,7 +248,7 @@
 
       <v-row class="mt-6">
         <v-col cols="6">
-          <v-card class="ml-auto" max-width="300">
+          <v-card class="ml-auto" max-width="300" elevation="10">
             <v-img height="280" src="/chf1.jpg"></v-img>
 
             <v-card-title class="font text-capitalize">
@@ -279,7 +279,7 @@
         </v-col>
 
         <v-col cols="6">
-          <v-card class="mr-auto" max-width="300">
+          <v-card class="mr-auto" max-width="300" elevation="10">
             <v-img height="280" src="/chf2.jpeg"></v-img>
 
             <v-card-title class="font text-capitalize">
@@ -405,6 +405,37 @@
         </v-carousel>
       </v-row>
     </div>
+
+    <!--sec6 -->
+
+    <div id="section6">
+      <v-row justify="center" class="mt-4">
+        <h1 class="h1 font-weight-bold mb-4 font text-center text-capitalize">
+          Some of Our Clients
+        </h1>
+      </v-row>
+
+      <v-row class="mt-6 ml-0">
+        <v-col cols="2">
+          <v-img contain height="100" max-width="150" src="/hlt.svg"></v-img>
+        </v-col>
+        <v-col cols="2">
+          <v-img height="100" contain max-width="150" src="nab.jpg"></v-img>
+        </v-col>
+        <v-col cols="2">
+          <v-img contain height="100" max-width="150" src="jbc.png"></v-img>
+        </v-col>
+        <v-col cols="2">
+          <v-img contain height="100" max-width="150" src="/fis.jpg"></v-img>
+        </v-col>
+        <v-col cols="2">
+          <v-img contain height="100" max-width="150" src="cam.jpg"></v-img>
+        </v-col>
+        <v-col cols="2" class="">
+          <v-img contain height="100" max-width="150" src="cer.jpg"></v-img>
+        </v-col>
+      </v-row>
+    </div>
   </div>
 </template>
 
@@ -449,27 +480,34 @@ export default {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background: ghostwhite;
+  background: #F5F5F5;
 }
 
 #section3 {
   width: 100vw;
   height: 50vh;
   overflow: hidden;
-  background: ghostwhite;
+  background: #FFFAFA;
 }
 
 #section4 {
   width: 100vw;
   height: 110vh;
   overflow: hidden;
-  background: ghostwhite;
+  background: #F0FFF0;
 }
 
 #section5 {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background: ghostwhite;
+  background: #FFF5EE;
+}
+
+#section6 {
+  width: 100vw;
+  height: 50vh;
+  overflow: hidden;
+  background: #FFFAF0;
 }
 </style>
