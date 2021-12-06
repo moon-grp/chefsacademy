@@ -1,69 +1,489 @@
 <template>
   <div>
-    <v-row>
-      <v-col class="ml-0">
-        <v-carousel height="100vh" hide-delimiters>
-          <v-carousel-item
-            v-for="(item, i) in items"
-            :key="i"
-            :src="item.src"
-            reverse-transition="fade-transition"
-            transition="fade-transition"
-          >
-            <v-row align="center" justify="center" class="mt-16">
-              <v-col>
-                <v-row align="center" justify="center">
-                  <v-col cols="12" md="6" xl="8" class="mt-16">
-                    <h1
-                      class="
-                        display-2
-                        font-weight-bold
-                        mb-4
-                        white--text
-                        font
-                        text-center
-                      "
+    <!--  <v-row class="section1">
+      <v-carousel height="100vh" hide-delimiters :show-arrows="false">
+        <v-carousel-item
+          src="/newL.JPG"
+          reverse-transition="fade-transition"
+          transition="fade-transition"
+        >
+          <v-row align="center" justify="center" class="mt-16">
+            <v-col>
+              <v-row align="center" justify="center">
+                <v-col cols="12" md="6" xl="8">
+                  <h1 class="display-2 font-weight-bold mb-4 font">
+                    Professional Culinary School
+                  </h1>
+                  <v-row align="center" justify="center">
+                    <h5 class="font-weight-light ">
+                      Lorem ipsum dolor sit amet consectetur 
+                      adipisicing elit. Maiores porro voluptatibus
+                      delectus nam optio harum!
+                    </h5>
+                  </v-row>
+                  <v-row align="center" justify="center">
+                    <v-btn
+                      rounded
+                      outlined
+                      large
+                      color="#f2874a"
+                      @click="$vuetify.goTo('#features')"
+                      class="mt-5"
                     >
-                      Chefs Academy
-                    </h1>
-                    <h4 class="font-weight-light text-justify white--text font">
-                      Chef Academy is a training Agency accredited since 2013
-                      and issues certificates of qualification. Located in the
-                      hub of the Abuja metropolis, the training is given in
-                      compliance with high quality international standards. We
-                      have Something for everyone From the amateur cooking
-                      programs to complete CHEF TRAINING COURSES. Take a look at
-                      the training courses we offer
-                    </h4>
-                    <v-row align="center" justify="center">
-                      <v-btn
-                        rounded
-                        x-large
-                        dark
-                        @click="$vuetify.goTo('#section2')"
-                        class="mt-5"
-                      >
-                        Find Courses
-                        <v-icon class="ml-2">mdi-arrow-down</v-icon>
-                      </v-btn>
-                    </v-row>
-                  </v-col>
-                </v-row>
-              </v-col>
-            </v-row>
-          </v-carousel-item>
-        </v-carousel>
-      </v-col>
+                      view courses
+                      <v-icon class="ml-2">mdi-arrow-down</v-icon>
+                    </v-btn>
+                  </v-row>
+                </v-col>
+              </v-row>
+            </v-col>
+          </v-row>
+
+              <v-row align="center" justify="center" >
+            <v-col cols="12" class="">
+              <v-row align="center" class="ml-6">
+                <v-col cols="12" md="6" xl="8">
+                  <h1 class="display-2 font-weight-bold mb-4 font">
+                    Professional Culinary School
+                  </h1>
+                  <h5 class="font-weight-light">
+                    Lorem ipsum dolor sit amet consectetur <br />
+                    adipisicing elit. Maiores porro voluptatibus <br />
+                    delectus nam optio harum!
+                  </h5>
+                  <v-btn
+                    rounded
+                    outlined
+                    large
+                    color="#f2874a"
+                    @click="$vuetify.goTo('#features')"
+                    class="mt-5"
+                  >
+                    view courses
+                    <v-icon class="ml-2">mdi-arrow-down</v-icon>
+                  </v-btn>
+                </v-col>
+              </v-row>
+            </v-col>
+          </v-row> 
+        </v-carousel-item>
+      </v-carousel>
+    </v-row> -->
+
+    <v-row align="center" justify="start" class="section1">
+      <v-container>
+        <v-col cols="10">
+          <v-row align="start" justify="start">
+            <v-col cols="12" md="6" xl="8">
+              <h1 class="display-2 font-weight-bold mb-4">Chefs Academy</h1>
+              <h1 class="font-weight-light">
+                Master the act of pastry, Baking, <br />
+                cookery and more.  
+                Skils that will take your career to the next level.
+              </h1>
+              <v-btn
+                rounded
+                outlined
+                large
+                @click="$vuetify.goTo('#features')"
+                class="mt-5"
+              >
+                view courses
+                <v-icon class="ml-2">mdi-arrow-down</v-icon>
+              </v-btn>
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-container>
     </v-row>
 
-    <!--sec 2 -->
+    <v-row class="mb-4">
+      <v-container>
+        <v-row class="h1">
+          <p class="font-weight-bold h1 fnt">Courses</p>
+        </v-row>
+        <v-row class="">
+          <v-col cols="4">
+            <v-card class="" width="280" outlined elevation="6">
+              <v-img height="180" src="newL.JPG"></v-img>
+
+              <v-card-title class="fntc"
+                >Diploma<br />In Culinary Art</v-card-title
+              >
+
+              <v-row>
+                <v-col class="text-h2" cols="6">
+                  <v-list-item two-line>
+                    <v-list-item-content>
+                      <v-list-item-title class="fntc">
+                        Price
+                      </v-list-item-title>
+                      <v-list-item-subtitle>₦ 250,000</v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-col>
+
+                <v-col class="" cols="6">
+                  <v-list-item two-line>
+                    <v-list-item-content>
+                      <v-list-item-title class="fntc">
+                        Duration
+                      </v-list-item-title>
+                      <v-list-item-subtitle>six months</v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-col>
+              </v-row>
+
+              <v-card-actions>
+                <v-btn
+                  color="#f2874a"
+                  class="text-capitalize"
+                  outlined
+                  to="/courses/diploma-culinary-art"
+                >
+                  learn more
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-col>
+
+          <v-col cols="4">
+            <v-card class="" width="280" outlined elevation="6">
+              <v-img height="180" src="ad.JPG"></v-img>
+
+              <v-card-title class="fntc"
+                >Advance Diploma <br />in Culinary Art</v-card-title
+              >
+
+              <v-row>
+                <v-col class="text-h2" cols="6">
+                  <v-list-item two-line>
+                    <v-list-item-content>
+                      <v-list-item-title class="fntc">
+                        Price
+                      </v-list-item-title>
+                      <v-list-item-subtitle>₦ 550,000</v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-col>
+
+                <v-col class="" cols="6">
+                  <v-list-item two-line>
+                    <v-list-item-content>
+                      <v-list-item-title class="fntc">
+                        Duration
+                      </v-list-item-title>
+                      <v-list-item-subtitle>12 weeks</v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-col>
+              </v-row>
+
+              <v-card-actions>
+                <v-btn
+                  color="#f2874a"
+                  class="text-capitalize"
+                  outlined
+                  to="/courses/advance-diploma-culinary-art"
+                >
+                  learn more
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-col>
+
+          <v-col cols="4">
+            <v-card class="" width="280" outlined elevation="6">
+              <v-img height="180" src="pd.JPG"></v-img>
+
+              <v-card-title class="fntc"
+                >Professional Diploma<br />In Culinary Art</v-card-title
+              >
+
+              <v-row>
+                <v-col class="text-h2" cols="6">
+                  <v-list-item two-line>
+                    <v-list-item-content>
+                      <v-list-item-title class="fntc">
+                        Price
+                      </v-list-item-title>
+                      <v-list-item-subtitle>₦ 950,000</v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-col>
+
+                <v-col class="" cols="6">
+                  <v-list-item two-line>
+                    <v-list-item-content>
+                      <v-list-item-title class="fntc">
+                        Duration
+                      </v-list-item-title>
+                      <v-list-item-subtitle>nine months</v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-col>
+              </v-row>
+
+              <v-card-actions>
+                <v-btn
+                  color="#f2874a"
+                  class="text-capitalize"
+                  outlined
+                  to="/courses/professional-diploma-culinary-art"
+                >
+                  learn more
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-row>
+
+    <v-row class="mb-4">
+      <v-container>
+        <v-row class="">
+          <v-col cols="4">
+            <v-card class="" width="280" outlined elevation="6">
+              <v-img height="180" src="pa.JPG"></v-img>
+
+              <v-card-title class="fntc"
+                >Desserts /<br />Pastary Art</v-card-title
+              >
+
+              <v-row>
+                <v-col class="text-h2" cols="6">
+                  <v-list-item two-line>
+                    <v-list-item-content>
+                      <v-list-item-title class="fntc">
+                        Price
+                      </v-list-item-title>
+                      <v-list-item-subtitle>₦ 350,000</v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-col>
+
+                <v-col class="" cols="6">
+                  <v-list-item two-line>
+                    <v-list-item-content>
+                      <v-list-item-title class="fntc">
+                        Duration
+                      </v-list-item-title>
+                      <v-list-item-subtitle>4 weeks</v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-col>
+              </v-row>
+
+              <v-card-actions>
+                <v-btn
+                  color="#f2874a"
+                  class="text-capitalize"
+                  outlined
+                  @click="reserve"
+                >
+                  learn more
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-col>
+
+          <v-col cols="4">
+            <v-card class="" width="280" outlined elevation="6">
+              <v-img height="180" src="cc.JPG"></v-img>
+
+              <v-card-title class="fntc"
+                >Continental <br />Culinary Art</v-card-title
+              >
+
+              <v-row>
+                <v-col class="text-h2" cols="6">
+                  <v-list-item two-line>
+                    <v-list-item-content>
+                      <v-list-item-title class="fntc">
+                        Price
+                      </v-list-item-title>
+                      <v-list-item-subtitle>₦ 350,000</v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-col>
+
+                <v-col class="" cols="6">
+                  <v-list-item two-line>
+                    <v-list-item-content>
+                      <v-list-item-title class="fntc">
+                        Duration
+                      </v-list-item-title>
+                      <v-list-item-subtitle>5 weeks</v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-col>
+              </v-row>
+
+              <v-card-actions>
+                <v-btn
+                  color="#f2874a"
+                  class="text-capitalize"
+                  outlined
+                  @click="reserve"
+                >
+                  learn more
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-col>
+
+          <v-col cols="4">
+            <v-card class="" width="280" outlined elevation="6">
+              <v-img height="180" src="pz.JPG"></v-img>
+
+              <v-card-title class="fntc"
+                >Healthy<br />living cuisine</v-card-title
+              >
+
+              <v-row>
+                <v-col class="text-h2" cols="6">
+                  <v-list-item two-line>
+                    <v-list-item-content>
+                      <v-list-item-title class="fntc">
+                        Price
+                      </v-list-item-title>
+                      <v-list-item-subtitle>₦ 280,000</v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-col>
+
+                <v-col class="" cols="6">
+                  <v-list-item two-line>
+                    <v-list-item-content>
+                      <v-list-item-title class="fntc">
+                        Duration
+                      </v-list-item-title>
+                      <v-list-item-subtitle>5 weeks</v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-col>
+              </v-row>
+
+              <v-card-actions>
+                <v-btn
+                  color="#f2874a"
+                  class="text-capitalize"
+                  outlined
+                  @click="reserve"
+                >
+                  learn more
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-row>
+
+    <v-row class="">
+      <v-container>
+        <v-row class="">
+          <v-col cols="4">
+            <v-card class="" width="280" outlined elevation="6">
+              <v-img height="180" src="ca.JPG"></v-img>
+
+              <v-card-title class="fntc">Cake <br />Baking Art</v-card-title>
+
+              <v-row>
+                <v-col class="text-h2" cols="6">
+                  <v-list-item two-line>
+                    <v-list-item-content>
+                      <v-list-item-title class="fntc">
+                        Price
+                      </v-list-item-title>
+                      <v-list-item-subtitle>₦ 300,000</v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-col>
+
+                <v-col class="" cols="6">
+                  <v-list-item two-line>
+                    <v-list-item-content>
+                      <v-list-item-title class="fntc">
+                        Duration
+                      </v-list-item-title>
+                      <v-list-item-subtitle>4 weeks</v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-col>
+              </v-row>
+
+              <v-card-actions>
+                <v-btn
+                  color="#f2874a"
+                  class="text-capitalize"
+                  outlined
+                  @click="reserve"
+                >
+                  learn more
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-col>
+
+          <v-col cols="4">
+            <v-card class="" width="280" outlined elevation="6">
+              <v-img height="180" src="ac.JPG"></v-img>
+
+              <v-card-title class="fntc"
+                >African <br />Culinary Art</v-card-title
+              >
+
+              <v-row>
+                <v-col class="text-h2" cols="6">
+                  <v-list-item two-line>
+                    <v-list-item-content>
+                      <v-list-item-title class="fntc">
+                        Price
+                      </v-list-item-title>
+                      <v-list-item-subtitle>₦ 180,000</v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-col>
+
+                <v-col class="" cols="6">
+                  <v-list-item two-line>
+                    <v-list-item-content>
+                      <v-list-item-title class="fntc">
+                        Duration
+                      </v-list-item-title>
+                      <v-list-item-subtitle>5 weeks</v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-col>
+              </v-row>
+
+              <v-card-actions>
+                <v-btn
+                  color="#f2874a"
+                  class="text-capitalize"
+                  outlined
+                  @click="reserve"
+                >
+                  learn more
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-row>
+
+    <!--sec 2 
     <div id="section2" class="ml-0">
       <v-row justify="center" class="mt-4">
         <h1 class="h1 font-weight-bold mb-4 font text-center">Chefs Academy</h1>
       </v-row>
       <v-row class="mt-2">
         <v-col cols="4">
-          <v-card class="mx-auto" max-width="300" height="450"   elevation="10">
+          <v-card class="mx-auto" max-width="300" height="450" elevation="10">
             <v-img height="200" src="/c1.jpg"></v-img>
 
             <v-card-title class="font">Diploma in Culinary Art</v-card-title>
@@ -140,7 +560,7 @@
       </v-row>
     </div>
 
-    <!--sec3 -->
+    
     <div id="section3">
       <v-row justify="center" class="mt-4">
         <h1 class="h1 font-weight-bold mb-4 font text-center text-capitalize">
@@ -238,7 +658,7 @@
       </v-row>
     </div>
 
-    <!--sec 4 -->
+
     <div id="section4">
       <v-row justify="center" class="mt-4">
         <h1 class="h1 font-weight-bold mb-4 font text-center text-capitalize">
@@ -311,7 +731,7 @@
       </v-row>
     </div>
 
-    <!--sec 5 -->
+    
     <div id="section5">
       <v-row justify="center" class="mt-4">
         <h1 class="h1 font-weight-bold mb-4 font text-center text-capitalize">
@@ -406,7 +826,7 @@
       </v-row>
     </div>
 
-    <!--sec6 -->
+ 
 
     <div id="section6">
       <v-row justify="center" class="mt-4">
@@ -435,7 +855,7 @@
           <v-img contain height="100" max-width="150" src="cer.jpg"></v-img>
         </v-col>
       </v-row>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -465,8 +885,52 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
+.v-sheet.v-card {
+  border-radius: 5px;
+}
+
+.test {
+  clip-path: circle(50% at 73% 43%);
+}
+
 .font {
   font-family: 'Poppins', sans-serif;
+  color: #f2874a;
+}
+
+.fnt {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+}
+
+.fntc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+
+.pusht {
+  margin-top: 15%;
+}
+
+.t {
+  background: #f2874a;
+}
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  .sec_space {
+    margin-top: 15%;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .sec_space {
+    margin-top: 15%;
+  }
+}
+
+.sec_space {
+  margin-top: 15%;
 }
 
 .section1 {
@@ -480,34 +944,41 @@ export default {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background: #F5F5F5;
+  background: #ffffff;
 }
 
 #section3 {
   width: 100vw;
   height: 50vh;
   overflow: hidden;
-  background: #FFFAFA;
+  background: #fffafa;
 }
 
 #section4 {
   width: 100vw;
   height: 110vh;
   overflow: hidden;
-  background: #F0FFF0;
+  background: #f0fff0;
 }
 
 #section5 {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background: #FFF5EE;
+  background: #fff5ee;
 }
 
 #section6 {
   width: 100vw;
   height: 50vh;
   overflow: hidden;
-  background: #FFFAF0;
+  background: #fffaf0;
+}
+
+.newLand {
+  clip-path: ellipse(62% 65% at 72% 34%);
+  background: url('/newL.JPG');
+  background-attachment: fixed;
+  height: 100%;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <v-app dark app>
-    <v-main>
-      <v-app-bar   elevate-on-scroll absolute color="transparent" >
+    <v-main class="bg">
+    <!--  <v-app-bar elevate-on-scroll  color="transparent">
         <v-toolbar-title class="ml-6">
           <nuxt-link to="/">
             <v-avatar size="50">
@@ -12,40 +12,69 @@
         <v-spacer></v-spacer>
 
         <nuxt-link to="/affiliate">
-          <v-btn dark text class="text-capitalize mx-2 hidden-sm-and-down fnt"
+          <v-btn
+            color="#F2874A"
+            text
+            class="text-capitalize mx-2 hidden-sm-and-down fnt"
             >Home</v-btn
           >
         </nuxt-link>
         <nuxt-link to="/affiliate">
-          <v-btn dark text class="text-capitalize mx-2 hidden-sm-and-down fnt"
+          <v-btn
+            color="#F2874A"
+            text
+            class="text-capitalize mx-2 hidden-sm-and-down fnt"
             >About us</v-btn
           >
         </nuxt-link>
 
         <nuxt-link to="/affiliate">
-          <v-btn dark text class="text-capitalize mx-2 hidden-sm-and-down fnt"
+          <v-btn
+            color="#F2874A"
+            text
+            class="text-capitalize mx-2 hidden-sm-and-down fnt"
             >Courses</v-btn
           >
         </nuxt-link>
+      </v-app-bar> -->
 
-        <nuxt-link to="/affiliate">
-          <v-btn text dark class="text-capitalize mx-2 hidden-sm-and-down fnt"
-            >consultancy services</v-btn
-          >
-        </nuxt-link>
+      <Nuxt class="mt-0 mb-10" />
+      <v-footer padless>
+        <v-card flat tile width="100%" class="text-center" color="#FAF9F6">
+          <v-card-text>
+            <span class="fntxxx"> +234 809 218 9734 | +234 815 563 3650 </span
+            ><br />
+            <v-btn text color="#f2874a">
+              <v-icon left> mdi-map-marker </v-icon>
+              33, parakou cresent, off aminu Kano cresent, wuse 2, abuja
+            </v-btn> <br />
 
-        <nuxt-link to="/affiliate">
-          <v-btn dark text class="text-capitalize mx-2 hidden-sm-and-down fnt"
-            >gallery</v-btn
-          >
-        </nuxt-link>
-        <v-spacer></v-spacer>
-      </v-app-bar>
+             <v-btn text color="#f2874a">
+              <v-icon left> mdi-email </v-icon>
+              chefsacademy@gmail.com
+            </v-btn>  <br />
+              <v-btn text color="#f2874a">
+              <v-icon left> mdi-twitter </v-icon>
+              chefsacademyng
+            </v-btn>
 
-      <Nuxt class="mt-0" />
+            <v-btn text color="#f2874a">
+              <v-icon left> mdi-facebook </v-icon>
+              chefsacademyng
+            </v-btn>
+
+            <v-btn text color="#f2874a">
+              <v-icon left> mdi-instagram </v-icon>
+              chefsacademyng
+            </v-btn>
+ 
+
+          </v-card-text>
+        </v-card>
+      </v-footer>
     </v-main>
 
- <!--   <v-footer :absolute="!fixed" app>
+    <!--   <v-footer :absolute="!fixed" app>
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer> -->
   </v-app>
@@ -82,18 +111,28 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
 .containe {
   background-image: url('~assets/land1.png');
 }
 
-body {
+.bg {
   background: #ffffff;
 }
 
 .fnt {
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
-  color: #000000;
+  font-size: 25px;
+  color: #f2874a;
+}
+
+.fntxxx {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: #f2874a;
 }
 
 a {
