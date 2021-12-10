@@ -49,21 +49,101 @@
         </div>
 
         <div class="mt-6">
-          <v-btn  x-large color="#f2874a" dark  class="text-capitalize fntccc">
+          <v-btn  x-large color="#f2874a" dark  class="text-capitalize fntccc" @click="dialog = true">
             apply
           </v-btn>
         </div>
         
       </v-container>
     </v-row>
+
+     <v-dialog v-model="dialog" persistent max-width="600px">
+      <v-card>
+        <v-card-title>
+          <span class="text-h5">Application form</span>
+        </v-card-title>
+        <v-card-text>
+          <v-container>
+            <v-row>
+              <v-col cols="12" sm="6" md="6">
+                <v-text-field
+                  label="First name"
+                  v-model="firstname"
+                  outlined
+                ></v-text-field>
+              </v-col>
+
+              <v-col cols="12" sm="6" md="6">
+                <v-text-field
+                  label="Last name"
+                  v-model="lastname"
+                  outlined
+                ></v-text-field>
+              </v-col>
+              <v-col cols="12">
+                <v-text-field
+                  label="Email"
+                  v-model="email"
+                  outlined
+                ></v-text-field>
+              </v-col>
+              <v-col cols="12">
+                <v-text-field
+                  label="Phone number"
+                  type="number"
+                  outlined
+                  v-model="phonenumber"
+                ></v-text-field>
+              </v-col>
+              <v-col cols="12">
+                <v-text-field
+                  label="Address"
+                  v-model="address"
+                  outlined
+                ></v-text-field>
+              </v-col>
+            </v-row>
+          </v-container>
+          <small>*indicates required field</small>
+        </v-card-text>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn color="blue darken-1" text @click="dialog = false">
+            Close
+          </v-btn>
+          <v-btn color="blue darken-1" text @click="send_application">
+            Save
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+    <v-snackbar
+      shaped
+      outlined
+      type="success"
+      v-model="alert"
+      top
+      :timeout="7000"
+    >
+      we would contact you shortly..
+    </v-snackbar>
   </div>
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   layout: 'courses',
   data() {
     return {
+      alert: false,
+      firstname: null,
+      lastname: null,
+      email: null,
+      phonenumber: null,
+      dialog: false,
+      address: null,
+      course: 'diploma in culinary art',
       items: [
         {
           src: '/land3.png',
@@ -80,6 +160,23 @@ export default {
       ],
     }
   },
+   methods: {
+    send_application() {
+      var _name = this.firstname + ' ' + this.lastname
+      axios
+        .post('https://chefsacademybot.herokuapp.com/notify', {
+          name: _name,
+          email: this.email,
+          phonenumber: this.phonenumber,
+          address: this.address,
+          course: this.course,
+        })
+        .then((res) => {
+          this.dialog = false
+          this.alert = true
+        })
+    },
+   }
 }
 </script>
 
