@@ -42,7 +42,7 @@
 
            <v-list-item two-line>
             <v-list-item-content>
-              <v-list-item-title class="fntc"> Price </v-list-item-title>
+              <v-list-item-title class="fntc"> Tution fee </v-list-item-title>
               <v-list-item-subtitle>₦ 360,000 (5,000 registration fee)</v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>

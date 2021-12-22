@@ -23,7 +23,7 @@
     <v-row class="mt-4">
       <v-container class="mb-6">
         <div class="text-capitalize fon">
-          About Professional Diploma in culinary art
+        Professional Diploma in culinary art with resturant and entrepreneurial management
         </div>
 
         <div class="mt-4 text-left fntcc">
@@ -48,9 +48,9 @@
 
           <v-list-item two-line>
             <v-list-item-content>
-              <v-list-item-title class="fntc"> Price </v-list-item-title>
+              <v-list-item-title class="fntc"> Tution fee </v-list-item-title>
               <v-list-item-subtitle
-                >₦ 950,000 (5,000 registration fee)</v-list-item-subtitle
+                >₦ 1,000,000 (5,000 registration fee)</v-list-item-subtitle
               >
             </v-list-item-content>
           </v-list-item>

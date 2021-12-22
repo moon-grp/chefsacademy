@@ -2,7 +2,7 @@
   <div>
     <v-row>
       <v-carousel :show-arrows="false" hide-delimiters height="50vh">
-        <v-carousel-item src="/ad.JPG" aspect-ratio="1"></v-carousel-item>
+        <v-carousel-item src="/ad.JPG" aspect-ratio="16/9"></v-carousel-item>
       </v-carousel>
 
       <!--  <v-app-bar
@@ -23,15 +23,15 @@
     <v-row class="mt-4">
       <v-container class="mb-6">
         <div class="text-capitalize fon">
-          About Advance Diploma in culinary art
+          Advance Diploma in culinary art and food entrepreneurial management
         </div>
 
         <div class="mt-4 text-left fntcc">
-          The diploma in culinary arts is a curriculum designed specifiaclly for
-          students intrested in the culinary arts.<br />
-          Students get high-quality academic, thoeretical, and foundational
-          practical training in the areas of cooking,<br />
-          pastry, and bakery, as well as service.
+          Master the art of pastries, baking cookery and more in our advanced
+          diploma<br> in culinary arts and entrepreneurial management. You will explore diffrent african menus,<br>
+          experiment with ethnic and contemporary cuisine as well as develop your skills in the <br />
+          culinary arts while learning valuable managment skills that will take your carrer to the next level.
+          
         </div>
 
         <div class="mt-4">
@@ -46,7 +46,7 @@
 
           <v-list-item two-line>
             <v-list-item-content>
-              <v-list-item-title class="fntc"> Price </v-list-item-title>
+              <v-list-item-title class="fntc"> Tution fee </v-list-item-title>
               <v-list-item-subtitle
                 >₦ 550,000 (5,000 registration fee)</v-list-item-subtitle
               >

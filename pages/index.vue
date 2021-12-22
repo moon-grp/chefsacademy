@@ -116,9 +116,9 @@
                   <v-list-item two-line>
                     <v-list-item-content>
                       <v-list-item-title class="fntc">
-                        Price
+                        Tution
                       </v-list-item-title>
-                      <v-list-item-subtitle>₦ 250,000</v-list-item-subtitle>
+                      <v-list-item-subtitle>₦ 365,000</v-list-item-subtitle>
                     </v-list-item-content>
                   </v-list-item>
                 </v-col>
@@ -129,7 +129,7 @@
                       <v-list-item-title class="fntc">
                         Duration
                       </v-list-item-title>
-                      <v-list-item-subtitle>six months</v-list-item-subtitle>
+                      <v-list-item-subtitle>12 weeks</v-list-item-subtitle>
                     </v-list-item-content>
                   </v-list-item>
                 </v-col>
@@ -161,7 +161,7 @@
                   <v-list-item two-line>
                     <v-list-item-content>
                       <v-list-item-title class="fntc">
-                        Price
+                        Tution
                       </v-list-item-title>
                       <v-list-item-subtitle>₦ 550,000</v-list-item-subtitle>
                     </v-list-item-content>
@@ -206,9 +206,9 @@
                   <v-list-item two-line>
                     <v-list-item-content>
                       <v-list-item-title class="fntc">
-                        Price
+                        Tution
                       </v-list-item-title>
-                      <v-list-item-subtitle>₦ 950,000</v-list-item-subtitle>
+                      <v-list-item-subtitle>₦ 1,000,000</v-list-item-subtitle>
                     </v-list-item-content>
                   </v-list-item>
                 </v-col>
@@ -257,9 +257,9 @@
                   <v-list-item two-line>
                     <v-list-item-content>
                       <v-list-item-title class="fntc">
-                        Price
+                        Tution
                       </v-list-item-title>
-                      <v-list-item-subtitle>₦ 350,000</v-list-item-subtitle>
+                      <v-list-item-subtitle>₦ 355,000</v-list-item-subtitle>
                     </v-list-item-content>
                   </v-list-item>
                 </v-col>
@@ -281,7 +281,7 @@
                   color="#f2874a"
                   class="text-capitalize"
                   outlined
-                  @click="reserve"
+                   to="/courses/pastry-dessert-art"
                 >
                   learn more
                 </v-btn>
@@ -302,9 +302,9 @@
                   <v-list-item two-line>
                     <v-list-item-content>
                       <v-list-item-title class="fntc">
-                        Price
+                        Tution
                       </v-list-item-title>
-                      <v-list-item-subtitle>₦ 350,000</v-list-item-subtitle>
+                      <v-list-item-subtitle>₦ 355,000</v-list-item-subtitle>
                     </v-list-item-content>
                   </v-list-item>
                 </v-col>
@@ -326,7 +326,7 @@
                   color="#f2874a"
                   class="text-capitalize"
                   outlined
-                  @click="reserve"
+                  to="/courses/continental-culinary"
                 >
                   learn more
                 </v-btn>
@@ -347,7 +347,7 @@
                   <v-list-item two-line>
                     <v-list-item-content>
                       <v-list-item-title class="fntc">
-                        Price
+                        Tution
                       </v-list-item-title>
                       <v-list-item-subtitle>₦ 280,000</v-list-item-subtitle>
                     </v-list-item-content>
@@ -371,7 +371,7 @@
                   color="#f2874a"
                   class="text-capitalize"
                   outlined
-                  @click="reserve"
+                  to="/courses/healthy-living"
                 >
                   learn more
                 </v-btn>
@@ -396,7 +396,7 @@
                   <v-list-item two-line>
                     <v-list-item-content>
                       <v-list-item-title class="fntc">
-                        Price
+                        Tution
                       </v-list-item-title>
                       <v-list-item-subtitle>₦ 300,000</v-list-item-subtitle>
                     </v-list-item-content>
@@ -420,7 +420,7 @@
                   color="#f2874a"
                   class="text-capitalize"
                   outlined
-                  @click="reserve"
+                  to="courses/cake-baking-art"
                 >
                   learn more
                 </v-btn>
@@ -433,7 +433,7 @@
               <v-img height="180" src="ac.JPG"></v-img>
 
               <v-card-title class="fntc"
-                >African <br />Culinary Art</v-card-title
+                >African <br />Cuisine Art</v-card-title
               >
 
               <v-row>
@@ -441,7 +441,7 @@
                   <v-list-item two-line>
                     <v-list-item-content>
                       <v-list-item-title class="fntc">
-                        Price
+                        Tution
                       </v-list-item-title>
                       <v-list-item-subtitle>₦ 180,000</v-list-item-subtitle>
                     </v-list-item-content>
@@ -454,7 +454,7 @@
                       <v-list-item-title class="fntc">
                         Duration
                       </v-list-item-title>
-                      <v-list-item-subtitle>5 weeks</v-list-item-subtitle>
+                      <v-list-item-subtitle>3 weeks</v-list-item-subtitle>
                     </v-list-item-content>
                   </v-list-item>
                 </v-col>
@@ -465,13 +465,104 @@
                   color="#f2874a"
                   class="text-capitalize"
                   outlined
-                  @click="reserve"
+                  to="courses/african-cuisine"
                 >
                   learn more
                 </v-btn>
               </v-card-actions>
             </v-card>
           </v-col>
+
+           <v-col cols="4">
+            <v-card class="" width="280" outlined elevation="6">
+              <v-img height="180" src="jnr.JPG"></v-img>
+
+              <v-card-title class="fntc"
+                >Chef's <br />Academy junior</v-card-title
+              >
+
+              <v-row>
+                <v-col class="text-h2" cols="6">
+                  <v-list-item two-line>
+                    <v-list-item-content>
+                      <v-list-item-title class="fntc">
+                        
+                      </v-list-item-title>
+                      <v-list-item-subtitle></v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-col>
+
+                <v-col class="" cols="6">
+                  <v-list-item two-line>
+                    <v-list-item-content>
+                      <v-list-item-title class="fntc">
+                        
+                      </v-list-item-title>
+                      <v-list-item-subtitle></v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-col>
+              </v-row>
+
+              <v-card-actions>
+                <v-btn
+                  color="#f2874a"
+                  class="text-capitalize"
+                  outlined
+                  to="courses/chefs-junior"
+                >
+                  learn more
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-col>
+
+             <v-col cols="4">
+            <v-card class="" width="280" outlined elevation="6">
+              <v-img height="180" src="ent.JPG"></v-img>
+
+              <v-card-title class="fntc"
+                >Food Entrepreneurship <br />and restaurant<br /> management</v-card-title
+              >
+
+              <v-row>
+                <v-col class="text-h2" cols="6">
+                  <v-list-item two-line>
+                    <v-list-item-content>
+                      <v-list-item-title class="fntc">
+                        Tution
+                      </v-list-item-title>
+                      <v-list-item-subtitle>₦ 200,000</v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-col>
+
+                <v-col class="" cols="6">
+                  <v-list-item two-line>
+                    <v-list-item-content>
+                      <v-list-item-title class="fntc">
+                        Duration
+                      </v-list-item-title>
+                      <v-list-item-subtitle>2 weeks</v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-col>
+              </v-row>
+
+              <v-card-actions>
+                <v-btn
+                  color="#f2874a"
+                  class="text-capitalize"
+                  outlined
+                  to="/courses/management"
+                >
+                  learn more
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-col>
+          
         </v-row>
       </v-container>
     </v-row>
