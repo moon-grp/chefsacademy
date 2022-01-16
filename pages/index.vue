@@ -3,7 +3,7 @@
     <!--  <v-row class="section1">
       <v-carousel height="100vh" hide-delimiters :show-arrows="false">
         <v-carousel-item
-          src="/newL.JPG"
+          src="/jbt.jpg"
           reverse-transition="fade-transition"
           transition="fade-transition"
         >
@@ -71,7 +71,43 @@
     </v-row> -->
 
     <v-row align="center" justify="start" class="section1">
-      <v-container>
+      <v-carousel height="100vh" hide-delimiters :show-arrows="false">
+        <v-carousel-item
+          src="/jbt.jpg"
+          reverse-transition="fade-transition"
+          transition="fade-transition"
+          gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
+        >
+          <v-container>
+            <v-col cols="10">
+              <v-row align="start" justify="start" class="wordspace">
+                <v-col cols="12" md="6" xl="8">
+                  <h1 class="display-2 font-weight-bold mb-4 font">
+                    Chefs Academy
+                  </h1>
+                  <h1 class="font-weight-light font">
+                    Master the act of pastry, Baking, <br />
+                    cookery and more. Skils that will take your career to the
+                    next level.
+                  </h1>
+                  <v-btn
+                    rounded
+                    outlined
+                    large
+                    @click="$vuetify.goTo('#courses')"
+                    class="mt-5"
+                    color="#f2874a"
+                  >
+                    view courses
+                    <v-icon class="ml-2">mdi-arrow-down</v-icon>
+                  </v-btn>
+                </v-col>
+              </v-row>
+            </v-col>
+          </v-container>
+        </v-carousel-item>
+      </v-carousel>
+      <!--    <v-container>
         <v-col cols="10">
           <v-row align="start" justify="start">
             <v-col cols="12" md="6" xl="8">
@@ -94,10 +130,11 @@
             </v-col>
           </v-row>
         </v-col>
-      </v-container>
+
+      </v-container> -->
     </v-row>
 
-    <v-row class="mb-4">
+    <v-row class="mb-4" id="courses">
       <v-container>
         <v-row class="h1">
           <p class="font-weight-bold h1 fnt">Courses</p>
@@ -281,7 +318,7 @@
                   color="#f2874a"
                   class="text-capitalize"
                   outlined
-                   to="/courses/pastry-dessert-art"
+                  to="/courses/pastry-dessert-art"
                 >
                   learn more
                 </v-btn>
@@ -473,7 +510,7 @@
             </v-card>
           </v-col>
 
-           <v-col cols="4">
+          <v-col cols="4">
             <v-card class="" width="280" outlined elevation="6">
               <v-img height="180" src="jnr.JPG"></v-img>
 
@@ -485,9 +522,7 @@
                 <v-col class="text-h2" cols="6">
                   <v-list-item two-line>
                     <v-list-item-content>
-                      <v-list-item-title class="fntc">
-                        
-                      </v-list-item-title>
+                      <v-list-item-title class="fntc"> </v-list-item-title>
                       <v-list-item-subtitle></v-list-item-subtitle>
                     </v-list-item-content>
                   </v-list-item>
@@ -496,9 +531,7 @@
                 <v-col class="" cols="6">
                   <v-list-item two-line>
                     <v-list-item-content>
-                      <v-list-item-title class="fntc">
-                        
-                      </v-list-item-title>
+                      <v-list-item-title class="fntc"> </v-list-item-title>
                       <v-list-item-subtitle></v-list-item-subtitle>
                     </v-list-item-content>
                   </v-list-item>
@@ -518,12 +551,13 @@
             </v-card>
           </v-col>
 
-             <v-col cols="4">
+          <v-col cols="4">
             <v-card class="" width="280" outlined elevation="6">
               <v-img height="180" src="ent.JPG"></v-img>
 
               <v-card-title class="fntc"
-                >Food Entrepreneurship <br />and restaurant<br /> management</v-card-title
+                >Food Entrepreneurship <br />and restaurant<br />
+                management</v-card-title
               >
 
               <v-row>
@@ -562,10 +596,208 @@
               </v-card-actions>
             </v-card>
           </v-col>
-          
         </v-row>
       </v-container>
     </v-row>
+
+    
+    <div id="section4">
+      <v-row justify="center" class="mt-4">
+        <h1 class="h1 font-weight-bold mb-4 font text-center text-capitalize">
+          Some of Our chefs
+        </h1>
+      </v-row>
+
+      <v-row class="mt-6">
+        <v-col cols="6">
+          <v-card class="ml-auto" max-width="300" elevation="10">
+            <v-img height="280" src="/chf1.jpg"></v-img>
+
+            <v-card-title class="font text-capitalize">
+              <v-row justify="center" class="h1"> Chef IG </v-row>
+            </v-card-title>
+            <v-card-subtitle class="mt-1">
+              <v-row justify="center" class="h1"> Head chef </v-row>
+            </v-card-subtitle>
+
+            <v-card-text class="font">
+              An excellent chef with over ten years of experience.
+            </v-card-text>
+
+            <v-row justify="center">
+              <v-card-actions>
+                <v-icon color="#6592E6" x-large class="mx-auto">
+                  mdi-instagram
+                </v-icon>
+                <v-icon color="#6592E6" x-large class="mx-auto"
+                  >> mdi-twitter
+                </v-icon>
+                <v-icon color="#6592E6" x-large class="mx-auto"
+                  >> mdi-facebook
+                </v-icon>
+              </v-card-actions>
+            </v-row>
+          </v-card>
+        </v-col>
+
+        <v-col cols="6">
+          <v-card class="mr-auto" max-width="300" elevation="10">
+            <v-img height="280" src="/chf2.jpeg"></v-img>
+
+            <v-card-title class="font text-capitalize">
+              <v-row justify="center" class="h1"> Chef China </v-row>
+            </v-card-title>
+            <v-card-subtitle class="mt-1">
+              <v-row justify="center" class="h1"> Pastry Chef </v-row>
+            </v-card-subtitle>
+
+            <v-card-text class="font">
+              Don't mess with this woman when it comes to variety of pastries.
+            </v-card-text>
+
+            <v-row justify="center">
+              <v-card-actions>
+                <v-icon color="#6592E6" x-large class="mx-auto">
+                  mdi-instagram
+                </v-icon>
+                <v-icon color="#6592E6" x-large class="mx-auto"
+                  >> mdi-twitter
+                </v-icon>
+                <v-icon color="#6592E6" x-large class="mx-auto"
+                  >> mdi-facebook
+                </v-icon>
+              </v-card-actions>
+            </v-row>
+          </v-card>
+        </v-col>
+      </v-row>
+    </div>
+
+
+
+     <div id="section5">
+      <v-row justify="center" class="mt-4">
+        <h1 class="h1 font-weight-bold mb-4 font text-center text-capitalize">
+          My Experience at Chefs Academy
+        </h1>
+      </v-row>
+
+      <v-row>
+        <v-carousel
+          cycle
+          height="400"
+          hide-delimiter-background
+          show-arrows-on-hover
+        >
+          <v-carousel-item>
+            <v-row justify="center" class="mt-8">
+              <v-avatar color="primary" size="164">
+                <img src="/grad3.jpg" />
+              </v-avatar>
+            </v-row>
+            <v-row justify="center" class="mt-4">
+              <div class="text-center mx-auto font mt-4">
+                The professionalism at Chef's Academy is top notch and the
+                quality <br />
+                of services rendered are highly commendable. I'd recommend
+                Chef's Academy not just for the value one gets but also for the
+                amazing <br />
+                learning experience that stays with you long after the end of
+                the program
+              </div>
+            </v-row>
+            <v-row justify="center" class="mt-4">
+              <div class="text-center mx-auto font mt-4 overline">Amaka</div>
+            </v-row>
+
+            <v-row justify="center" class="mt-2">
+              <div class="text-center mx-auto font mt-4 h4">GRADUATE</div>
+            </v-row>
+          </v-carousel-item>
+
+          <v-carousel-item>
+            <v-row justify="center" class="mt-8">
+              <v-avatar color="primary" size="164">
+                <img src="/grd1.jpg" />
+              </v-avatar>
+            </v-row>
+            <v-row justify="center" class="mt-4">
+              <div class="text-center mx-auto font mt-4">
+                Training at Chef's Academy is the highlight of my professional
+                career so far.<br />
+                The wealth of knowledge taught and the practical application
+                will launch anyone<br />
+                who desires to go into the culinary world from a novice to a
+                professional per excellence.
+              </div>
+            </v-row>
+            <v-row justify="center" class="mt-4">
+              <div class="text-center mx-auto font mt-4 overline">
+                Anselm Ekere
+              </div>
+            </v-row>
+
+            <v-row justify="center" class="mt-2">
+              <div class="text-center mx-auto font mt-4 h4">GRADUATE</div>
+            </v-row>
+          </v-carousel-item>
+
+          <v-carousel-item>
+            <v-row justify="center" class="mt-8">
+              <v-avatar color="primary" size="164">
+                <img src="/grad2.jpg" />
+              </v-avatar>
+            </v-row>
+            <v-row justify="center" class="mt-4">
+              <div class="text-center mx-auto font mt-4">
+                The professionalism at Chef's Academy is top notch and the
+                quality of services rendered are highly commendable.<br />
+                I'd recommend Chef's Academy not just for the value one gets but
+                also for the amazing learning<br />
+                experience that stays with you long after the end of the program
+              </div>
+            </v-row>
+            <v-row justify="center" class="mt-4">
+              <div class="text-center mx-auto font mt-4 overline">Tokunbo</div>
+            </v-row>
+
+            <v-row justify="center" class="mt-2">
+              <div class="text-center mx-auto font mt-4 h4">GRADUATE</div>
+            </v-row>
+          </v-carousel-item>
+        </v-carousel>
+      </v-row>
+    </div>
+
+  <div id="section6">
+      <v-row justify="center" class="mt-4">
+        <h1 class="h1 font-weight-bold mb-4 font text-center text-capitalize">
+          Some of Our Clients
+        </h1>
+      </v-row>
+
+      <v-row class="mt-6 ml-0">
+        <v-col cols="2">
+          <v-img contain height="100" max-width="150" src="/hlt.svg"></v-img>
+        </v-col>
+        <v-col cols="2">
+          <v-img height="100" contain max-width="150" src="nab.jpg"></v-img>
+        </v-col>
+        <v-col cols="2">
+          <v-img contain height="100" max-width="150" src="jbc.png"></v-img>
+        </v-col>
+        <v-col cols="2">
+          <v-img contain height="100" max-width="150" src="/fis.jpg"></v-img>
+        </v-col>
+        <v-col cols="2">
+          <v-img contain height="100" max-width="150" src="cam.jpg"></v-img>
+        </v-col>
+        <v-col cols="2" class="">
+          <v-img contain height="100" max-width="150" src="cer.jpg"></v-img>
+        </v-col>
+      </v-row>
+    </div>
+
 
     <!--sec 2 
     <div id="section2" class="ml-0">
@@ -985,7 +1217,6 @@ export default {
 }
 
 .font {
-  font-family: 'Poppins', sans-serif;
   color: #f2874a;
 }
 
@@ -1006,9 +1237,13 @@ export default {
 .t {
   background: #f2874a;
 }
+
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
   .sec_space {
+    margin-top: 15%;
+  }
+  .wordspace {
     margin-top: 15%;
   }
 }
@@ -1018,6 +1253,13 @@ export default {
   .sec_space {
     margin-top: 15%;
   }
+  .wordspace {
+    margin-top: 30%;
+  }
+}
+
+.wordspace {
+  margin-top: 15%;
 }
 
 .sec_space {
@@ -1047,23 +1289,23 @@ export default {
 
 #section4 {
   width: 100vw;
-  height: 110vh;
+  height: 100vh;
   overflow: hidden;
-  background: #f0fff0;
+  background: #ffffff;
 }
 
 #section5 {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background: #fff5ee;
+  background: #ffffff;
 }
 
 #section6 {
   width: 100vw;
   height: 50vh;
   overflow: hidden;
-  background: #fffaf0;
+  background: #ffffff;
 }
 
 .newLand {

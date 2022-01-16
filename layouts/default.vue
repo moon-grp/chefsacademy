@@ -1,17 +1,17 @@
 <template>
   <v-app dark app>
     <v-main class="bg">
-    <!--  <v-app-bar elevate-on-scroll  color="transparent">
+      <v-app-bar elevate-on-scroll  color="transparent" absolute>
         <v-toolbar-title class="ml-6">
           <nuxt-link to="/">
-            <v-avatar size="50">
+            <v-avatar size="55" tile>
               <v-img class="mx-2" src="/logo.jpg"></v-img>
             </v-avatar>
           </nuxt-link>
         </v-toolbar-title>
         <v-spacer></v-spacer>
 
-        <nuxt-link to="/affiliate">
+        <nuxt-link to="/">
           <v-btn
             color="#F2874A"
             text
@@ -19,7 +19,7 @@
             >Home</v-btn
           >
         </nuxt-link>
-        <nuxt-link to="/affiliate">
+        <nuxt-link to="/">
           <v-btn
             color="#F2874A"
             text
@@ -28,7 +28,7 @@
           >
         </nuxt-link>
 
-        <nuxt-link to="/affiliate">
+        <nuxt-link to="#courses">
           <v-btn
             color="#F2874A"
             text
@@ -36,9 +36,9 @@
             >Courses</v-btn
           >
         </nuxt-link>
-      </v-app-bar> -->
+      </v-app-bar> 
 
-      <Nuxt class="mt-0 mb-10" />
+      <Nuxt class="mt-0 mb-14" />
       <v-footer padless>
         <v-card flat tile width="100%" class="text-center" color="#FAF9F6">
           <v-card-text>
