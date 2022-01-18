@@ -73,7 +73,7 @@
     <v-row align="center" justify="start" class="section1">
       <v-carousel height="100vh" hide-delimiters :show-arrows="false">
         <v-carousel-item
-          src="/jbt.jpg"
+          src="jbt.jpg"
           reverse-transition="fade-transition"
           transition="fade-transition"
           gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
@@ -96,7 +96,7 @@
                     large
                     @click="$vuetify.goTo('#courses')"
                     class="mt-5"
-                    color="#f2874a"
+                    color=""
                   >
                     view courses
                     <v-icon class="ml-2">mdi-arrow-down</v-icon>
@@ -137,12 +137,12 @@
     <v-row class="mb-4" id="courses">
       <v-container>
         <v-row class="h1">
-          <p class="font-weight-bold h1 fnt">Courses</p>
+          <p class="font-weight-bold h1 fnt-x">Courses</p>
         </v-row>
         <v-row class="">
           <v-col cols="4">
             <v-card class="" width="280" outlined elevation="6">
-              <v-img height="180" src="newL.JPG"></v-img>
+              <v-img height="180" src="newL.jpg"></v-img>
 
               <v-card-title class="fntc"
                 >Diploma<br />In Culinary Art</v-card-title
@@ -174,7 +174,7 @@
 
               <v-card-actions>
                 <v-btn
-                  color="#f2874a"
+                  color=""
                   class="text-capitalize"
                   outlined
                   to="/courses/diploma-culinary-art"
@@ -187,7 +187,7 @@
 
           <v-col cols="4">
             <v-card class="" width="280" outlined elevation="6">
-              <v-img height="180" src="ad.JPG"></v-img>
+              <v-img height="180" src="ad.jpg"></v-img>
 
               <v-card-title class="fntc"
                 >Advance Diploma <br />in Culinary Art</v-card-title
@@ -219,7 +219,7 @@
 
               <v-card-actions>
                 <v-btn
-                  color="#f2874a"
+                  color=""
                   class="text-capitalize"
                   outlined
                   to="/courses/advance-diploma-culinary-art"
@@ -232,7 +232,7 @@
 
           <v-col cols="4">
             <v-card class="" width="280" outlined elevation="6">
-              <v-img height="180" src="pd.JPG"></v-img>
+              <v-img height="180" src="pd.jpg"></v-img>
 
               <v-card-title class="fntc"
                 >Professional Diploma<br />In Culinary Art</v-card-title
@@ -264,7 +264,7 @@
 
               <v-card-actions>
                 <v-btn
-                  color="#f2874a"
+                  color=""
                   class="text-capitalize"
                   outlined
                   to="/courses/professional-diploma-culinary-art"
@@ -283,7 +283,7 @@
         <v-row class="">
           <v-col cols="4">
             <v-card class="" width="280" outlined elevation="6">
-              <v-img height="180" src="pa.JPG"></v-img>
+              <v-img height="180" src="pa.jpg"></v-img>
 
               <v-card-title class="fntc"
                 >Desserts /<br />Pastary Art</v-card-title
@@ -315,7 +315,7 @@
 
               <v-card-actions>
                 <v-btn
-                  color="#f2874a"
+                  color=""
                   class="text-capitalize"
                   outlined
                   to="/courses/pastry-dessert-art"
@@ -328,7 +328,7 @@
 
           <v-col cols="4">
             <v-card class="" width="280" outlined elevation="6">
-              <v-img height="180" src="cc.JPG"></v-img>
+              <v-img height="180" src="cc.jpg"></v-img>
 
               <v-card-title class="fntc"
                 >Continental <br />Culinary Art</v-card-title
@@ -360,7 +360,7 @@
 
               <v-card-actions>
                 <v-btn
-                  color="#f2874a"
+                  color=""
                   class="text-capitalize"
                   outlined
                   to="/courses/continental-culinary"
@@ -373,7 +373,7 @@
 
           <v-col cols="4">
             <v-card class="" width="280" outlined elevation="6">
-              <v-img height="180" src="pz.JPG"></v-img>
+              <v-img height="180" src="pz.jpg"></v-img>
 
               <v-card-title class="fntc"
                 >Healthy<br />living cuisine</v-card-title
@@ -405,7 +405,7 @@
 
               <v-card-actions>
                 <v-btn
-                  color="#f2874a"
+                  color=""
                   class="text-capitalize"
                   outlined
                   to="/courses/healthy-living"
@@ -424,7 +424,7 @@
         <v-row class="">
           <v-col cols="4">
             <v-card class="" width="280" outlined elevation="6">
-              <v-img height="180" src="ca.JPG"></v-img>
+              <v-img height="180" src="ca.jpg"></v-img>
 
               <v-card-title class="fntc">Cake <br />Baking Art</v-card-title>
 
@@ -454,7 +454,7 @@
 
               <v-card-actions>
                 <v-btn
-                  color="#f2874a"
+                  color=""
                   class="text-capitalize"
                   outlined
                   to="courses/cake-baking-art"
@@ -467,7 +467,7 @@
 
           <v-col cols="4">
             <v-card class="" width="280" outlined elevation="6">
-              <v-img height="180" src="ac.JPG"></v-img>
+              <v-img height="180" src="ac.jpg"></v-img>
 
               <v-card-title class="fntc"
                 >African <br />Cuisine Art</v-card-title
@@ -499,7 +499,7 @@
 
               <v-card-actions>
                 <v-btn
-                  color="#f2874a"
+                  color=""
                   class="text-capitalize"
                   outlined
                   to="courses/african-cuisine"
@@ -512,7 +512,7 @@
 
           <v-col cols="4">
             <v-card class="" width="280" outlined elevation="6">
-              <v-img height="180" src="jnr.JPG"></v-img>
+              <v-img height="180" src="jnr.jpg"></v-img>
 
               <v-card-title class="fntc"
                 >Chef's <br />Academy junior</v-card-title
@@ -540,7 +540,7 @@
 
               <v-card-actions>
                 <v-btn
-                  color="#f2874a"
+                  color=""
                   class="text-capitalize"
                   outlined
                   to="courses/chefs-junior"
@@ -553,7 +553,7 @@
 
           <v-col cols="4">
             <v-card class="" width="280" outlined elevation="6">
-              <v-img height="180" src="ent.JPG"></v-img>
+              <v-img height="180" src="ent.jpg"></v-img>
 
               <v-card-title class="fntc"
                 >Food Entrepreneurship <br />and restaurant<br />
@@ -586,7 +586,7 @@
 
               <v-card-actions>
                 <v-btn
-                  color="#f2874a"
+                  color=""
                   class="text-capitalize"
                   outlined
                   to="/courses/management"
@@ -642,7 +642,7 @@
 
         <v-col cols="6">
           <v-card class="mr-auto" max-width="300" elevation="10">
-            <v-img height="280" src="/chf2.jpeg"></v-img>
+            <v-img height="280" src="/chf2.jpg"></v-img>
 
             <v-card-title class="font text-capitalize">
               <v-row justify="center" class="h1"> Chef China </v-row>
@@ -1217,10 +1217,10 @@ export default {
 }
 
 .font {
-  color: #f2874a;
+  color: black;
 }
 
-.fnt {
+.fnt-x {
   font-family: 'Poppins', sans-serif;
   font-size: 40px;
 }
@@ -1310,7 +1310,7 @@ export default {
 
 .newLand {
   clip-path: ellipse(62% 65% at 72% 34%);
-  background: url('/newL.JPG');
+  background: url('/newL.jpg');
   background-attachment: fixed;
   height: 100%;
 }

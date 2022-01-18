@@ -130,7 +130,11 @@ html{
   font-size: 25px;
   color: #f2874a;
 }
-
+.fntxxx {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: #f2874a;
+}
 a {
   text-decoration: none;
 }
