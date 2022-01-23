@@ -5,7 +5,7 @@
         <v-toolbar-title class="ml-6">
           <nuxt-link to="/">
             <v-avatar size="55" tile>
-              <v-img class="mx-2" src="/logo.jpg"></v-img>
+              <v-img class="mx-2" src="https://res.cloudinary.com/sparaclet-inc/image/upload/v1642946453/chefsacademy/logo_qkxw9s.jpg"></v-img>
             </v-avatar>
           </nuxt-link>
         </v-toolbar-title>
