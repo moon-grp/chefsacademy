@@ -38,9 +38,10 @@
         </nuxt-link>
       </v-app-bar>
 
-      <Nuxt class="mt-0 mb-14" />
-      <v-footer padless>
-        <v-card flat tile width="100%" class="text-center" color="">
+      <Nuxt class="mb-15" />
+      
+    <!--  <v-footer padless>
+        <v-card flat tile  class="text-center" color="">
           <v-card-text>
             <span class="fntxxx"> +234 809 218 9734 | +234 815 563 3650 </span
             ><br />
@@ -71,12 +72,48 @@
             </v-btn>
           </v-card-text>
         </v-card>
-      </v-footer>
+      </v-footer> -->
     </v-main>
 
     <!--   <v-footer :absolute="!fixed" app>
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer> -->
+
+    <v-footer padless color="#FFFFFF">
+      <v-row justify="center" align="center" class="hidden-md-and-down">
+        <v-card flat tile  class="text-center" color="#FFFFFF">
+          <v-card-text>
+            <span class=""> +234 809 218 9734 | +234 815 563 3650 </span
+            ><br />
+            <v-btn text color="">
+              <v-icon left> mdi-map-marker </v-icon>
+              33, parakou cresent, off aminu Kano cresent, wuse 2, abuja
+            </v-btn>
+            <br />
+
+            <v-btn text color="">
+              <v-icon left> mdi-email </v-icon>
+              chefsacademy@gmail.com
+            </v-btn>
+            <br />
+            <v-btn text color="">
+              <v-icon left> mdi-twitter </v-icon>
+              chefsacademyng
+            </v-btn>
+
+            <v-btn text color="">
+              <v-icon left> mdi-facebook </v-icon>
+              chefsacademyng
+            </v-btn>
+
+            <v-btn text color="">
+              <v-icon left> mdi-instagram </v-icon>
+              chefsacademyng
+            </v-btn>
+          </v-card-text>
+        </v-card>
+      </v-row>
+      </v-footer>
   </v-app>
 </template>
 
