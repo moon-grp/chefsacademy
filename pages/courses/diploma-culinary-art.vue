@@ -2,7 +2,7 @@
   <div>
     <v-row>
       <v-carousel :show-arrows="false" hide-delimiters height="50vh">
-        <v-carousel-item src="/newL.JPG" aspect-ratio="1"></v-carousel-item>
+        <v-carousel-item src="https://res.cloudinary.com/sparaclet-inc/image/upload/v1642946309/chefsacademy/newL_td046u.jpg" aspect-ratio="1"></v-carousel-item>
       </v-carousel>
 
       <!--  <v-app-bar
@@ -43,7 +43,7 @@
            <v-list-item two-line>
             <v-list-item-content>
               <v-list-item-title class="fntc"> Tution fee </v-list-item-title>
-              <v-list-item-subtitle>₦ 360,000 (5,000 registration fee)</v-list-item-subtitle>
+              <v-list-item-subtitle>₦ 365,000 (5,000 registration fee)</v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>
         </div>

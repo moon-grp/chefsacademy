@@ -1,43 +1,13 @@
-<
 <template>
   <div class="">
     <v-row align="center" justify="start" class="section1">
-      <v-carousel height="100vh" hide-delimiters :show-arrows="false">
-        <v-carousel-item
-          src="jbt.jpg"
-          reverse-transition="fade-transition"
-          transition="fade-transition"
-          gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
-        >
-          <v-container>
-            <v-col cols="10">
-              <v-row align="start" justify="start" class="wordspace">
-                <v-col cols="12" md="6" xl="8">
-                  <h1 class="display-2 font-weight-bold mb-4 font">
-                    Chefs Academy
-                  </h1>
-                  <h1 class="font-weight-light font">
-                    Master the act of pastry, Baking, <br />
-                    cookery and more. Skils that will take your career to the
-                    next level.
-                  </h1>
-                  <v-btn
-                    rounded
-                    outlined
-                    large
-                    @click="$vuetify.goTo('#courses')"
-                    class="mt-5"
-                    color=""
-                  >
-                    view courses
-                    <v-icon class="ml-2">mdi-arrow-down</v-icon>
-                  </v-btn>
-                </v-col>
-              </v-row>
-            </v-col>
-          </v-container>
-        </v-carousel-item>
-      </v-carousel>
+      <SfBanner
+        title="Chefs Academy"
+        description="Master the act of pastry, Baking, cookery and more. Skils that will take your career to the next level."
+        buttonText="Courses"
+        background=""
+        image="https://res.cloudinary.com/sparaclet-inc/image/upload/v1642946434/chefsacademy/jbt_q2orxt.jpg"
+      />
     </v-row>
 
     <v-row class="mb-4" id="courses">
@@ -676,6 +646,15 @@
     </div>
   </div>
 </template>
+
+<script>
+import { SfBanner } from '@storefront-ui/vue'
+export default {
+  components: {
+    SfBanner,
+  },
+}
+</script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');

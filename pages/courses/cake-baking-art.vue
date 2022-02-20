@@ -2,7 +2,7 @@
   <div>
     <v-row>
       <v-carousel :show-arrows="false" hide-delimiters height="50vh">
-        <v-carousel-item src="/pd.JPG" aspect-ratio="1"></v-carousel-item>
+        <v-carousel-item src="https://res.cloudinary.com/sparaclet-inc/image/upload/v1644158400/chefsacademy/photo5764796880008624513_lrjicc.jpg" aspect-ratio="1"></v-carousel-item>
       </v-carousel>
 
       <!--  <v-app-bar

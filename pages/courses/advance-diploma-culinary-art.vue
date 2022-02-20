@@ -1,11 +1,12 @@
 <template>
   <div>
     <v-row>
-      <v-carousel :show-arrows="false" hide-delimiters height="50vh">
-        <v-carousel-item src="/ad.JPG" aspect-ratio="16/9"></v-carousel-item>
+     
+       <v-carousel :show-arrows="false" hide-delimiters height="50vh">
+        <v-carousel-item src="https://res.cloudinary.com/sparaclet-inc/image/upload/v1645211747/chefsacademy/photo5800683805667867023_n1krg5.jpg" aspect-ratio="16/9"></v-carousel-item>
       </v-carousel>
 
-      <!--  <v-app-bar
+     <!--   <v-app-bar
         absolute
         color="#6A76AB"
         dark
@@ -28,10 +29,13 @@
 
         <div class="mt-4 text-left fntcc">
           Master the art of pastries, baking cookery and more in our advanced
-          diploma<br> in culinary arts and entrepreneurial management. You will explore diffrent african menus,<br>
-          experiment with ethnic and contemporary cuisine as well as develop your skills in the <br />
-          culinary arts while learning valuable managment skills that will take your carrer to the next level.
-          
+          diploma<br />
+          in culinary arts and entrepreneurial management. You will explore
+          diffrent african menus,<br />
+          experiment with ethnic and contemporary cuisine as well as develop
+          your skills in the <br />
+          culinary arts while learning valuable managment skills that will take
+          your carrer to the next level.
         </div>
 
         <div class="mt-4">
@@ -55,7 +59,13 @@
         </div>
 
         <div class="mt-6">
-          <v-btn x-large color="#f2874a" dark class="text-capitalize fntccc" @click="dialog = true">
+          <v-btn
+            x-large
+            color="#f2874a"
+            dark
+            class="text-capitalize fntccc"
+            @click="dialog = true"
+          >
             apply
           </v-btn>
         </div>
@@ -135,9 +145,13 @@
 </template>
 
 <script>
+import { SfBanner } from '@storefront-ui/vue'
 import axios from 'axios'
 export default {
   layout: 'courses',
+   components: {
+    SfBanner,
+  },
   data() {
     return {
       alert: false,
@@ -186,6 +200,15 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+.sf-banner {
+  height: 10vh;
+  font-family: 'Urbanist', sans-serif;
+  --banner-height:
+}
+
+
+
 
 .v-sheet.v-card {
   border-radius: 5px;

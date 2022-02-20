@@ -95,4 +95,10 @@ export default {
   build: {
     transpile: [/^@storefront-ui/],
   },
+  publicRuntimeConfig: {
+    keyUrl: process.env.KEY,
+  },
+  privateRuntimeConfig: {
+    myPrivateToken: process.env.KEY
+  }
 }

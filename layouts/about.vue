@@ -1,7 +1,7 @@
 <template>
   <v-app dark app>
     <v-main class="bg">
-      <v-app-bar elevate-on-scroll color="transparent" absolute>
+      <v-app-bar elevate-on-scroll color="transparent">
         <v-toolbar-title class="ml-6">
           <nuxt-link to="/">
             <v-avatar size="55" tile>
