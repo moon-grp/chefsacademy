@@ -43,7 +43,7 @@
             <v-list-item-content>
               <v-list-item-title class="fntc"> Duration </v-list-item-title>
               <v-list-item-subtitle
-                >12 weeks (5 days a week)</v-list-item-subtitle
+                >14 weeks (4 days a week)</v-list-item-subtitle
               >
             </v-list-item-content>
           </v-list-item>

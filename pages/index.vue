@@ -96,7 +96,7 @@
                           <v-list-item-title class="fntx">
                             Duration
                           </v-list-item-title>
-                          <v-list-item-subtitle>12 weeks</v-list-item-subtitle>
+                          <v-list-item-subtitle>14 weeks</v-list-item-subtitle>
                         </v-list-item-content>
                       </v-list-item>
                     </v-col>
@@ -686,6 +686,72 @@
                     </v-card-actions>
                   </v-card>
                 </v-carousel-item>
+
+
+
+                   <v-carousel-item>
+                  <v-card class="mx-auto" max-width="600" outlined>
+                    <v-card-text class="text-h6 font-weight-bold pt-4">
+                      <span class="fntx-home">"</span> Chef Academy is a perfect blend for amazing food techniques delivered in a completely accessible manner. You come away, learning something new, no matter what your previous experience in the kitchen may be. I'm really having a good time at chef academy <span class="fntx-home">"</span>
+                    </v-card-text>
+
+                    <v-card-actions>
+                      <v-list-item class="grow">
+                        <v-list-item-content>
+                          <v-list-item-title
+                            ><div class="fntx">
+                              - Becky Kay
+                            </div></v-list-item-title
+                          >
+                        </v-list-item-content>
+                      </v-list-item>
+                    </v-card-actions>
+                  </v-card>
+                </v-carousel-item>
+
+
+                
+                   <v-carousel-item>
+                  <v-card class="mx-auto" max-width="600" outlined>
+                    <v-card-text class="text-h6 font-weight-bold pt-4">
+                      <span class="fntx-home">"</span>Chef's Academy has been a wonderful experience so far. I've learnt more than I imagined i would. The wholesome and engaging course has definitely refined and improved my culinary skills. Attending Chef's Academy is a golden opportunity. <span class="fntx-home">"</span>
+                    </v-card-text>
+
+                    <v-card-actions>
+                      <v-list-item class="grow">
+                        <v-list-item-content>
+                          <v-list-item-title
+                            ><div class="fntx">
+                              - Benedicta Shinku
+                            </div></v-list-item-title
+                          >
+                        </v-list-item-content>
+                      </v-list-item>
+                    </v-card-actions>
+                  </v-card>
+                </v-carousel-item>
+
+
+                
+                   <v-carousel-item>
+                  <v-card class="mx-auto" max-width="600" outlined>
+                    <v-card-text class="text-h6 font-weight-bold pt-4">
+                      <span class="fntx-home">"</span>It's more than a school. The experience was wonderful. The staff and management were very warm. I love my time there and always look forward coming to class. I strongly recommend them.   I want to thank you for giving my cooking experience a new and easy look. <span class="fntx-home">"</span>
+                    </v-card-text>
+
+                    <v-card-actions>
+                      <v-list-item class="grow">
+                        <v-list-item-content>
+                          <v-list-item-title
+                            ><div class="fntx">
+                              - Girls Egbuonu
+                            </div></v-list-item-title
+                          >
+                        </v-list-item-content>
+                      </v-list-item>
+                    </v-card-actions>
+                  </v-card>
+                </v-carousel-item>
               </v-carousel>
             </v-row>
           </v-container>
@@ -802,12 +868,16 @@ export default {
 }
 
 .sf-banner__title {
-  font-family: 'Poppins', sans-serif;
-  font-size: 45px;
-  font-weight: 400;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+
+
 }
 .sf-banner__description {
   font-family: 'Urbanist', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 992px) {
